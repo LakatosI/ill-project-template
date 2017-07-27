@@ -1,0 +1,8 @@
+#!/bin/bash
+Optimization=-O0
+Warnings=-Wall
+Debug=-g
+CompileFlags=$Optimzation" "$Warnings" "$Debug
+LinkerFlags=
+
+cc -x c src/main.c $CompileFlags $LinkerFlags -o bin/main
